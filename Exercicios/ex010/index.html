@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/">repositorio publico no GitHub</a></p>
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo/">curso em video</a> gratuito no youtube</p>
+    <P>Clicando no link vc será redirecionado ao site ou local do link, assim com a tag <code>"a"</code> de ancora ou ancoragem, assim abrindo o parametro <code>"href="</code> <q>hipertext reference</q> onde entre aspas indicara o local ou site linkado e fechando com "">", porem ainda falta fechar a tag, sendo que o que escrever na frente do link e antes de fechar o <code>"&lt;/a&gt;"</code> será o nome que ficara linkado.</P>
+    <p>Exemplo: <br>https://jujutsu.com, foi escrito no href e finalizou com o >, a tag ainda estara aberta e depois do sinal colocara o palavra <strong>anime</strong> significa que o link não vai aparecer e aparecera o nome "anime" sendo uma palavra clicavel ou linkada, qdo fechar a tag <code>"/a"</code> após essa palavra que ira finalizar a ancoragem e podera prosseguir.</p>
+    <p>Deste modo quando clicar no link não abrira uma nova aba, saindo do seu site e indo para o site linkado. VERIFICAR UTILIZAÇÃO POIS A PESSOA IRA PRA OUTRO SITE E TALVEZ NÃO RETORNE MAIS AO SEU.</p>
+    <img src="https://i.pinimg.com/564x/62/25/84/6225846f751d677c2838063ae85039eb.jpg" alt="pessoa pensando">
+    <p>Mas calma, a uma maneira ou parametro que faz abrir em outra "aba" jovem gafanhoto</p>
+    <p>Você tem a opção que é recomendada de adcionar o parametro logo após o seu link de <code>target="_blank"</code> onde o atributo <code>target</code> define onde o link será aberto e o valor "_blank" significa que envia a resposta ao seu navegador para abrir o link em uma nova aba ou nova janela dependendo das configurações do navegador
+        </p>
+        <p>&lt;a href="https://www.example.com" target="_blank">Visite o site</a><br>
+            Neste exemplo, quando o usuário clica no link, ele é levado para https://www.example.com, mas em uma nova aba, mantendo a página original aberta.</p>
+            <p>Com o <code>HTML5</code> usa junto para indicar logo após o parametro target, adcionar o parametro "rel" de relativo com o valor "external" rel=external , indicando assim que é relativo a um site externo e que quero que abra em uma nova aba em branco o link.</p>
+            <h1>Usando Links Internos</h1>
+            <p>Você pode acessar a pagina 02 clique <a href="pag002.html" rel="next" target="_self">aqui</a></p>
+        <p>Para ir a pagina de filmes clique <a href="filmes/pag003.html" hel="next" target="_self">aqui</a></p>
+        <h1>links para downloads</h1>
+        <ul>
+            <li><a href="Livros/Como funciona a Internet.pdf" download="Como funciona a internet" type="application/pdf">livro em pdf</a></li>
+            <li><a href="Livros/Como funciona a Internet.zip">livro compactado em zip</a></li>
+        </ul> 
+        <p>Fiz uma lista sem organização, fiz ancoragem normal de link, encaminhei o local do arquivo no href, adcionei o parametro download=, adcionei outro parametro sendo o type= e adcionei o valor conforme o tipo de arquivo, neste caso type=<strong>application/pdf</strong> ou no link zipado type=<strong>application/zip</strong>, tem varios outros types também.</p>
+        <p>Para verificar os types pode usar o site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">Iana media-types</a></p>   
+</body>
+</html>

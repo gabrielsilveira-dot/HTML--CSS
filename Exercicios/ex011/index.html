@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pequena.webp" type="image/webp">
+        <source media="(max-width: 1050px)" srcset="imagens/media.webp" type="image/webp">
+      <img src="imagens/grande.webp" alt="foto pequena, imagem flexivel">  
+    </picture>
+    <p>Para colocar a imagem dentro dos paramentros que aparecem conforme o dispositivo tem que usar a TAG <code>&lt;picture&gt;</code></p>
+    <p>Dentro da TAG picture adcione a TAG <code>&lt;img&gt;</code> normalmente pra imagens, porem a tag picture adcionou a propriedade que sera relativa aquela imagem.</p>
+    <p>Após adcionar a imagem coloque a TAG <code>&lt;source&gt;</code> onde essa tag você basicamente informa que dependendo do tamanho da tela ao inves de usar a img é pra usar a <code>img</code> que estara no <code>source</code></p>
+    <p>Coloque os parametros exigidos, lembrese de ordenar a sequencia acima da tag img e não abaixo conforme o exemplo</p>
+    <p>
+    <pre>
+    <code>
+    &lt;picture>
+    &lt;source media="(max-width:750px )" srcset="imagens/pequena.webp" type="image/webp">
+    <source media="(max-width: 1050px)" srcset="imagens/media.webp" type="image/webp">
+            &lt;img src="imagens/grande.webp" alt="foto pequena, imagem flexivel">  
+        &lt;/picture>
+    </code>
+    </pre>
+    </p>
+    <p>Note que a TAG source ficou acima da imagem, e a imagem é grande e coloquei a imagem menor no source</p>
+    <p>Disse que se a tela for menor que 750px mostrar a imagem foto pequena</p>
+    <h1>Reproduzindo audio</h1>
+    <audio src="midia/happy-mistake.mp3" controls ></audio>
+    <p>Utilize o codigo abaixo para maior compatibilidade e variedade de navegadores, tornando mais responsivo</p>
+    <p>
+    <pre>
+    <code>
+        &lt;audio controls>
+        &lt;source src="audio.mp3" type="audio/mpeg"> <!-- Compatível com todos -->
+        &lt;source src="audio.ogg" type="audio/ogg"> <!-- Alternativa aberta -->
+        Seu navegador não suporta o elemento de áudio.
+        &lt;/audio>
+    </code>
+    </pre>
+    </p>
+    </body>
+</html>
