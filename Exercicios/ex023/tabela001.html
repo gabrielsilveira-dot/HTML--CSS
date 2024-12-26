@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse; /*Valor padrão é separado, faz as bordas se juntarem com o colapse*/
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px; /* espaçamento entre o conteudo e a borda*/
+
+            /* width: 133px; usei na tabela mas poderia usar aqui tamanho por coluna*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+  <h1>Minha primeira tabela</h1>
+
+  <!--Hierarquia de tabela (SIMPLES)
+       
+        Table (tabela)
+             Table row (linha)
+                 table header (cabeçalho) qdo necessario
+                 table data  (dados)-->
+  <table>
+    <tr>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A3</td>
+    <tr>  <!--Não precisa ter fechamento, nem a table row, nem a table data-->
+        <td>B1</td>
+        <td>B2</td>
+        <td>B3</td>
+    <tr>
+        <td>C1</td>
+        <td>C2</td>
+        <td>C3</td>
+  </table>  
+</body>
+</html>
