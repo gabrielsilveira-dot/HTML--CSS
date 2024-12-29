@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+              
+          
+        table {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.532);
+            background-color: rgb(240, 255, 255);
+            margin: auto;
+        }
+
+        td , th {
+            border: 1px solid black;
+        }
+        
+        td {
+            text-align: right;
+        }
+        
+        thead {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: darkgrey;
+            color: white;
+        }
+        
+        caption{
+            border: 1px solid rgba(0, 0, 0, 0.597);
+            padding: 7px;
+            margin-top: 15px;
+            background-color: rgb(240, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <!--  TABLE    SEMANTICA
+                THEAD (CABEÇA)
+                TBODY (CORPO)
+                TFOOT (PÉS)-->
+    <table>
+        <caption>Uma tabela qualquer</caption> <!--Texto acima da tabela, indicativo-->
+        <thead>
+            <tr>
+                <th colspan="2">Produtos</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody> <!--corpo da tabela -->
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </tbody>
+    <tfoot> <!--pés da tabela-->
+        <th>VALORES OU SOMA</th>
+        <td colspan="2">AQUI FICARIA A SOMA</td>
+    </tfoot>
+    </table>
+    </body>
+</html>
