@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe local</title>
+    <style>
+       *{ 
+        margin: 0;
+        padding: 0;
+        }
+        iframe{
+            display: block;
+            margin: auto;
+        }
+
+        .conteiner {
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+        }
+
+        p { 
+          text-align: justify;
+          text-wrap: wrap;
+          width: 30rem;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .tabela {
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <main class="conteudo">
+            <h1>Testando o iframe local</h1>
+        
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ipsa placeat accusantium autem eaque eveniet porro velit temporibus. Quos officia velit voluptas unde, voluptate numquam quis cum ex molestiae culpa.</p>
+        </main>
+        <section class="tabela">
+            <iframe src="../ex023/tabela004.html" frameborder="1" width="400px" height="300px"></iframe>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores rem quas repudiandae, facilis veniam distinctio? Dolores corporis dicta, a nam voluptates reprehenderit repudiandae? Dolorum iste voluptates cupiditate illo, veniam ipsum!</p>
+        </section>
+    </div>
+</body>
+</html>
