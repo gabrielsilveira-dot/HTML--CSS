@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornando iframes mais seguros</title>
+</head>
+<body>
+   <h1>Tornando iframes mais seguros</h1> 
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste, distinctio est repellat vero ipsum fugiat illum. Quidem, quo ipsum nobis voluptas, odit, sapiente soluta dolor laboriosam est cupiditate sed!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste, distinctio est repellat vero ipsum fugiat illum. Quidem, quo ipsum nobis voluptas, odit, sapiente soluta dolor laboriosam est cupiditate sed!</p>
+
+   <iframe src="" frameborder="0">
+  <!--Parametros que posso colocar no iframe para garantir maior segurança
+  
+  TODAS CONFIGURAÇÔES DE SEGURANÇA LIGADAS
+  1- sandbox="sandbox"
+
+  2-referrerpolicy="no-referrer"
+------------------------------------------------------
+  PERMITIR ALGUMAS CONFIGURAÇÔES
+
+  1 - sandbox="allow-same-origin (permitir as minhas origens locais)"
+             ="allow-forms"  (permiti os formularios)      
+             ="allow-scripts" (permiti os scripts do formularioa)
+
+    Isso faz que permita dados locais, formularios e scripts para funcionamento, o resto é bloqueado. 
+    Verifique essas configurações caso for usar para cada caso que utilizar o iframe para torna-lo mais seguro.
+  -->
+
+   </iframe>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste, distinctio est repellat vero ipsum fugiat illum. Quidem, quo ipsum nobis voluptas, odit, sapiente soluta dolor laboriosam est cupiditate sed!Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iste, distinctio est repellat vero ipsum fugiat illum. Quidem, quo ipsum nobis voluptas, odit, sapiente soluta dolor laboriosam est cupiditate sed!</p>
+</body>
+</html>
