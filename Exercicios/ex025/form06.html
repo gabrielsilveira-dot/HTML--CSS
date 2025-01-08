@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos color, range e file</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">COR</label>
+            <input type="color" name="color" id="icor">
+            
+        </p>
+
+        <p>
+            <label for="isas"> Nivel de satisfação</label>
+            <input type="range" name="satisfacao" id="isas" min="1" max="5" >
+        </p>
+        <p>
+            <!-- Se tratando de arquivo, o metodo de envio devera ser POST -->
+            <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+</body>
+</html>
