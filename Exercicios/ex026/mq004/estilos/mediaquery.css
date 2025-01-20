@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* TODAS AS OUTRAS MIDIAS */
+
+/* Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more. */
+
+
+/* impressora */
+@media print{
+    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/icon-print.png);
+    }
+
+    main{
+        border: 8px dashed rgb(55, 72, 27);
+        /* margin: 0;
+        padding: 0; */
+    }
+
+     h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#print{display: block;}
+}
+
+/* tablet */
+@media screen and (min-width:481px) and (max-width:768px){
+ body{
+    background-image:url(../imagens/back-tablet.jpg);
+    
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#print{display: none;}
+ }
+}
+
+
+/* pc */
+@media screen and (min-width:769px) and (max-width:1024px){
+   body{
+    background-image: url(../imagens/back-pc.jpg);
+
+    img#phone {display: none;}
+    img#tablet{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+    img#print{display: none;}
+   }
+}
+
+
+/* telas maiores */
+@media screen and (min-width: 1024px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    img#print{display: none;}
+    }
+}
