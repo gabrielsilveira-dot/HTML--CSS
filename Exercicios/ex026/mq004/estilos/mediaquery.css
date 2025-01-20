@@ -11,9 +11,9 @@ Extra large screens, TV – 1201px, and more. */
 
 /* impressora */
 @media print{
-    
     *{
         font-family: 'Courier New', Courier, monospace;
+        box-sizing: border-box;
     }
 
     body {
@@ -21,12 +21,11 @@ Extra large screens, TV – 1201px, and more. */
     }
 
     main{
-        border: 8px dashed rgb(55, 72, 27);
-        /* margin: 0;
-        padding: 0; */
+        border: 2px solid rgb(0, 0, 0);
+        height: auto;
     }
 
-     h1{
+     main h1{
         text-shadow: none;
         color: black;
     }
