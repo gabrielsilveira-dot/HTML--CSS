@@ -7,7 +7,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 body, html {
@@ -22,8 +22,8 @@ body {
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.673);
-    width: 90%;
+    background-color: rgba(255, 255, 255, 0.448);
+    width: 80%;
     margin:0 auto;
     border-radius: 10px;
     padding: 10px;
