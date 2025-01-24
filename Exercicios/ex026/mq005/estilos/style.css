@@ -17,48 +17,79 @@ html body{
     width: 100vw;
     background-color: darkgrey;
 }
+h1{
+    font-size: 5em;
+    text-align: center;
+}
+
+button {
+    height: 4em;
+    width: 9em;
+    border: 2px solid black;
+    margin: auto;
+}
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 header{
     background-color: rgb(123, 118, 118);
-    padding: 15px;
+    padding: 1em;
 }
 
-header h1{
+header > h1{
     text-align: center;
-    font-size: 2.2em;
-    padding-bottom: 1em;
+    font-size: 2em;
+    padding-bottom: .3em;
 }
 
 
 
-header nav ul li{
-    /* display: inline-block; */
-    display: block;
+.material-symbols-outlined {
+  background-color: rgb(123, 118, 118);
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+
+.material-symbols-outlined:hover {
+    background-color: rgb(58, 56, 56);
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+}
+
+header > nav > ul > li{
     text-align: center;
     color: white;
-    margin-bottom: .8em;
-    padding: 0.3em;
-}
-
-header nav ul li a{
-    color: white;
-    background-color: darkgrey;
-    padding: .6em;
-    border-radius: 3px;
+    height: 2em;
     
 }
 
+header > nav > ul >li > a{
+    display: block;
+    color: white;
+    background-color: rgb(187, 181, 181);
+    border: 2px solid rgb(113, 110, 110);
+    padding: .3em;
+    border-radius: 5px;
+}
+
 main{
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-top: 1em;
-    padding: 1.8em;
+    margin-top: .2em;
+    padding: 1.2em;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 main>h2{
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-align: center;
 }
 main>p{
