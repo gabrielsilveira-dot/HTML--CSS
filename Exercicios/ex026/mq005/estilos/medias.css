@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  span#burguer {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  header > nav > ul > li {
+    display: inline-block;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  span#burguer {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+  header > nav > ul > li {
+    display: inline-block;
+  }
+}
+
+/* telas maiores */
+@media screen and (min-width: 1024px) {
+  span#burguer {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  header > nav > ul > li {
+    display: inline-block;
+  }
+
+  main {
+    width: 818px;
+  }
+}
